@@ -7,7 +7,7 @@ const server = require('http').Server(app)
 const sockets = require("socket.io")(server)
 require('./socket')(sockets) // Se ejecuta la funcion del archivo socket
 
-const PORT = process.env.PORT | 3000
+const PORT = process.env.PORT || 3000
 
 // Archivos Estaticos
 
